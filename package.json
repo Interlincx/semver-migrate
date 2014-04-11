@@ -14,10 +14,11 @@
     "url": "git@github.com:Interlincx/semver-migrate.git"
   },
   "keywords": [
-    "boilerplate",
-    "starter",
-    "quickstart",
-    "template"
+    "upgrade",
+    "semver",
+    "migration",
+    "migrate",
+    "schema"
   ],
   "author": {
     "name": "Tom Hummel",
