@@ -1,0 +1,35 @@
+{
+  "name": "semver-migrate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Interlincx/semver-migrate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "starter",
+    "quickstart",
+    "template"
+  ],
+  "author": {
+    "name": "Tom Hummel",
+    "email": "tphummel@gmail.com",
+    "url": "tomhummel.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Interlincx/semver-migrate/issues"
+  },
+  "homepage": "https://github.com/Interlincx/semver-migrate",
+  "devDependencies": {
+    "tape": "~2.3.2"
+  }
+}
