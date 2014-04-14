@@ -17,17 +17,19 @@ getUpgradePath = function(current, all) {
   return sorted;
 };
 
-module.exports = function(model, versionFloors) {
+module.exports = function(model, upgradeSpecs, versionProp) {
   var originalVersion, upgradePath, version;
 
-  originalVersion = model.ssVersion || null;
-  upgradePath = getUpgradePath(originalVersion, Object.keys(versionFloors));
+  versionProp = versionProp != null ? versionProp : "version"
+
+  originalVersion = model[versionProp] || null;
+  upgradePath = getUpgradePath(originalVersion, Object.keys(upgradeSpecs));
 
   if (!(upgradePath.length > 0)) return model;
 
   upgradePath.forEach(function(version){
-    model = versionFloors[version](model);
-    model.ssVersion = version;
+    model = upgradeSpecs[version](model);
+    model[versionProp] = version;
   });
 
   if (!model.upgraded) {
