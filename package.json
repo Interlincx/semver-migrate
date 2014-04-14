@@ -1,6 +1,6 @@
 {
   "name": "semver-migrate",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "upgrade objects based on a semver-keyed migration map",
   "main": "index.js",
   "directories": {
